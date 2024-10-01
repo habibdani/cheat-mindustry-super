@@ -5,37 +5,36 @@ reload: 5
 range: 300
 ammoUseEffect: none
 rotateSpeed: 99
-shootSound: shoot
+
 shootSoundVolume: 0.2
-cooldownTime: 0.1
+cooldownTime: 0.7
 powerUse: 0
 recoilAmount: 0
 outlineIcon: false
 shootType: {
   type: MissileBulletType
-  speed: 20
-  damage: 50
-  splashDamage: 80
-  splashDamageRadius: 30
-  pierce: false
-  homingRange: 300
-  homingPower: 2
-  lifetime: 100
-  width: 9
-  height: 18
-  frontColor: ffcc00
-  backColor: ff9900
-  trailEffect: missileTrail
-  hitEffect: explosion
-  despawnEffect: explosion
-  smokeEffect: missileTrail
-  shootEffect: missileLaunch
+  speed: 15
+  damage: 10
+  pierce: true
+  pierceCap: 99
+  lifetime: 30
+  width: 5
+  height: 9
+  homingRange: 999
+  homingPower: 999
+  frontColor: c180ff
+  backColor: 736ad4
+  shootEffect: shootSmall
+  smokeEffect: none
+  hitEffect: hitBulletSmall
+  despawnEffect: shootSmallSmoke
+  splashDamage: 10
+  splashDamageRadius: 10
   collidesGround: true
-  collidesAir: true
-  collidesTiles: true
-  sprite: missile
+  sprite: bullet
 }
 requirements: [
 ]
 category: turret
 research: shield1
+
