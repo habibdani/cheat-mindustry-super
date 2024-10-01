@@ -572,7 +572,7 @@ weapons: [
         colors: [ 00b8ff, ffffff ]
         }
     }
- {
+{
     name: quell-weapon
     layerOffset: 0.001
     rotationLimit: 360
@@ -583,26 +583,20 @@ weapons: [
     recoil: 0
     x: 15
     y: -11
-
     reload: 60
-
     shootSound: missileSmall
-
     bullet: { 
         type: BulletType
         spawnUnit: quell-missile
         keepVelocity: false
-	collidesAir: true
-
+	    collidesAir: true
         speed: 0
-
         smokeEffect: shootBigSmoke2
         shootEffect: shootBig
-        }
     }
+}
 {
     name: zenith-missiles
-
     rotationLimit: 24
     baseRotation: 225
     rotateSpeed: 0.75
@@ -611,80 +605,71 @@ weapons: [
     shake: 7
     x: -6.5
     y: -12
-
     velocityRnd: 0.2
     inaccuracy: 45
     reload: 120
     recoil: 0
-
     shootSound: missile
-
-shoot: { 
+    shoot: { 
         shotDelay: 8
         shots: 6
     }
+    bullet: {
+        type: MissileBulletType
+        collideTerrain: false
+        keepVelocity: false
+        collidesAir: false
+        despawnShake: 4
+        drag: -0.003
+        hitShake: 4
+        shrinkY: 0
+        height: 9
+        width: 9
+        splashDamageRadius: 19
+        fragRandomSpread: 360
+        splashDamage: 120
+        homingRange: 100
+        fragBullets: 3
+        fragLifeMin: 0
+        weaveScale: 6
+        lifetime: 800
+        weaveMag: 2
+        speed: 2.25
+        damage: 100
+        despawnEffect: blastExplosion
+        hitEffect: blastExplosion
+        trailColor: ffa665
+        trailInterval: 8
+        lightColor: ffa665
+        lightOpacity: 0.7
+        lightRadius: 32
+        fragBullet: {
+            type: BasicBulletType
+            collideTerrain: false
+            pierceBuilding: true
+            collidesAir: false
+            despawnShake: 0.2
+            hitShake: 0.2
+            pierce: true
+            height: 3
+            width: 3
 
-bullet: {
-    type: MissileBulletType
-    collideTerrain: false
-    keepVelocity: false
-    collidesAir: false
-    despawnShake: 4
-    drag: -0.003
-    hitShake: 4
-    shrinkY: 0
-    height: 9
-    width: 9
+            splashDamageRadius: 13
+            splashDamage: 21
+            pierceCap: 2
+            lifetime: 400
+            speed: 1.45
+            damage: 25
 
-    splashDamageRadius: 19
-    fragRandomSpread: 360
-    splashDamage: 120
-    homingRange: 100
-    fragBullets: 3
-    fragLifeMin: 0
-    weaveScale: 6
-    lifetime: 800
-    weaveMag: 2
-    speed: 2.25
-    damage: 100
+            hitEffect: flakExplosion
 
-    despawnEffect: blastExplosion
-    hitEffect: blastExplosion
+            trailInterval: 6.5
+            trailColor: ffa665
 
-    trailColor: ffa665
-    trailInterval: 8
-
-    lightColor: ffa665
-    lightOpacity: 0.7
-    lightRadius: 32
-
-fragBullet: {
-    type: BasicBulletType
-    collideTerrain: false
-    pierceBuilding: true
-    collidesAir: false
-    despawnShake: 0.2
-    hitShake: 0.2
-    pierce: true
-    height: 3
-    width: 3
-
-    splashDamageRadius: 13
-    splashDamage: 21
-    pierceCap: 2
-    lifetime: 400
-    speed: 1.45
-    damage: 25
-
-    hitEffect: flakExplosion
-
-    trailInterval: 6.5
-    trailColor: ffa665
-
-    lightColor: ffa665
-    lightOpacity: 0.7
-    lightRadius: 17
-}
+            lightColor: ffa665
+            lightOpacity: 0.7
+            lightRadius: 17
+        }
     }
 }
 {

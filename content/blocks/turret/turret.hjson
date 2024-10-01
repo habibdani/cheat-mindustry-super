@@ -1,7 +1,7 @@
 type: PowerTurret
 health: 999999999
 size: 1
-reload: 60
+reload: 30
 range: 300
 ammoUseEffect: none
 rotateSpeed: 3
