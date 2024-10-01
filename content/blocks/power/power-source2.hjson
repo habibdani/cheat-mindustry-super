@@ -1,7 +1,7 @@
 type: PowerSource
 health: 999999999
 category: power
-laserRange: 99
+laserRange: 10
 maxNodes: 9999
 canOverdrive: true
 requirements: [
