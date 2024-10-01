@@ -30,18 +30,4 @@ outputItems: [
   oxide/50
   tungsten/50
   metaglass/50
-  ancimembrane/50
-	presstanium/50
-  seniorProcessor/50
-  juniorProcessor/50
-	zeta/50
-  fusionEnergy/50
-  multipleSteel/50
-  irayrondPanel/50
-	setonAlloy/50
-  darkEnergy/50
-  upgradeSort/50
-  metalOxhydrigen/50
-	thermoCorePositive/50
-  thermoCoreNegative/50
 ]
