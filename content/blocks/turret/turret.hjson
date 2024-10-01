@@ -5,31 +5,50 @@ reload: 5
 range: 300
 ammoUseEffect: none
 rotateSpeed: 99
-
 shootSoundVolume: 0.2
-cooldownTime: 0.7
+cooldownTime: 55
 powerUse: 0
 recoilAmount: 0
 outlineIcon: false
 shootType: {
   type: MissileBulletType
-  speed: 15
-  damage: 10
-  pierce: true
-  pierceCap: 99
-  lifetime: 30
-  width: 5
+  speed: 2.25
+  damage: 100
+  pierce: false
+  lifetime: 800
+  width: 9
   height: 9
-  homingRange: 999
-  homingPower: 999
-  frontColor: c180ff
-  backColor: 736ad4
-  shootEffect: shootSmall
-  smokeEffect: none
-  hitEffect: hitBulletSmall
-  despawnEffect: shootSmallSmoke
-  splashDamage: 10
-  splashDamageRadius: 10
+  splashDamage: 120
+  splashDamageRadius: 19
+  homingRange: 100
+  weaveScale: 6
+  weaveMag: 2
+  trailColor: ffa665
+  trailInterval: 8
+  lightColor: ffa665
+  lightOpacity: 0.7
+  lightRadius: 32
+  fragBullets: 3
+  fragBullet: {
+    type: BasicBulletType
+    pierce: true
+    pierceCap: 2
+    lifetime: 400
+    speed: 1.45
+    damage: 25
+    splashDamage: 21
+    splashDamageRadius: 13
+    width: 3
+    height: 3
+    hitEffect: flakExplosion
+    trailInterval: 6.5
+    trailColor: ffa665
+    lightColor: ffa665
+    lightOpacity: 0.7
+    lightRadius: 17
+  }
+  hitEffect: blastExplosion
+  despawnEffect: blastExplosion
   collidesGround: true
   sprite: bullet
 }
@@ -37,4 +56,3 @@ requirements: [
 ]
 category: turret
 research: shield1
-
