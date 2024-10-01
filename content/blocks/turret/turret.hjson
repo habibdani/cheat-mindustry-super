@@ -6,53 +6,18 @@ range: 300
 ammoUseEffect: none
 rotateSpeed: 3
 shootSoundVolume: 0.2
-cooldownTime: 20
+cooldownTime: 10
 powerUse: 0
 recoilAmount: 0
 outlineIcon: false
 shootType: {
-  type: MissileBulletType
-  speed: 2.25
-  damage: 100
-  pierce: false
-  lifetime: 800
-  width: 9
-  height: 9
-  splashDamage: 120
-  splashDamageRadius: 19
-  homingRange: 100
-  weaveScale: 6
-  weaveMag: 2
-  trailColor: ffa665
-  trailInterval: 8
-  lightColor: ffa665
-  lightOpacity: 0.7
-  lightRadius: 32
-  fragBullets: 3
-  fragBullet: {
-    type: BasicBulletType
-    pierce: true
-    pierceCap: 2
-    lifetime: 400
-    speed: 1.45
-    damage: 25
-    splashDamage: 21
-    splashDamageRadius: 13
-    width: 3
-    height: 3
-    hitEffect: flakExplosion
-    trailInterval: 6.5
-    trailColor: ffa665
-    lightColor: ffa665
-    lightOpacity: 0.7
-    lightRadius: 17
-  }
-  hitEffect: blastExplosion
-  despawnEffect: blastExplosion
-  collidesGround: true
-  sprite: bullet
-  shots: 2
-  shotDelay: 5
+  type: BulletType
+  spawnUnit: quell-missile
+  keepVelocity: false
+  collidesAir: true
+  speed: 0
+  smokeEffect: shootBigSmoke2
+  shootEffect: shootBig
 }
 requirements: [
 ]
