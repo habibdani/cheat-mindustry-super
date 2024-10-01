@@ -13,8 +13,8 @@ recoilAmount: 0
 outlineIcon: false
 shootType: {
   type: BasicBulletType
-  speed: 99
-  damage: 999999999
+  speed: 30
+  damage: 10
   pierce: true
   pierceCap: 99
   lifetime: 30
@@ -28,8 +28,8 @@ shootType: {
   smokeEffect: none
   hitEffect: hitBulletSmall
   despawnEffect: shootSmallSmoke
-  splashDamage: 999999999
-  splashDamageRadius: 999
+  splashDamage: 10
+  splashDamageRadius: 10
   collidesGround: true
   sprite: bullet
 }

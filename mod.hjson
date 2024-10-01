@@ -21,3 +21,7 @@ Features include:
 If you like the mod then give it a star in GitHub!"
 version: "1.2.7.1"
 minGameVersion: "136"
+
+hideBrowser: false
+
+hidden: false
